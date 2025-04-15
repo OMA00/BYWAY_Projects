@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  padding: 20px 2.5rem;
+  border-bottom: 1px solid #000;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 3rem;
+}
+
+header nav input {
+  width: 622px;
+  height: 40px;
+  padding-left: 40px;
+}
+
+header nav input::placeholder {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+header nav div:first-of-type {
+  position: relative;
+}
+
+header nav div:first-of-type .bx-search-alt-2 {
+  font-size: 16px;
+  color: #334155;
+  position: absolute;
+  top: 28px;
+  left: 15px;
+}
+
+header nav div:last-of-type .bx-cart-alt {
+  font-size: 24px;
+}
+
+header nav button {
+  gap: 5px;
+}
+
+header nav div:last-of-type button:first-of-type {
+  width: 61px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #334155;
+  transition: all 0.3s ease-in-out;
+}
+
+header nav div:last-of-type button:last-of-type {
+  width: 61px;
+  height: 40px;
+  background-color: #334155;
+  margin-left: 40px;
+  color: #fff;
+}
+
+header nav div:last-of-type button:hover {
+  background-color: transparent;
+  color: #334155;
+  cursor: pointer;
+}
+
+/*---Body section---*/
+#Container {
+  display: flex;
+}
+
+#form-header {
+  text-align: center;
+  font-family: "inter";
+  color: #0f172a;
+  margin-bottom: 80px;
+}
+
+#username {
+  margin-top: 10px;
+  width: 590px;
+  height: 10px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border: 1px solid grey;
+  padding: 16px;
+}
+
+#Passcount {
+  margin-top: 10px;
+  width: 590px;
+  height: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: 1px solid grey;
+  padding: 16px;
+}
+
+#button {
+  margin-top: 20px;
+  color: #fff;
+  background-color: #020617;
+  width: 183px;
+  height: 48px;
+  border-radius: 8px;
+  padding: 10px 24px 10px 24px;
+}
+
+h4 {
+  width: 93%;
+  text-align: center;
+  border-bottom: 1px solid grey;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  color: #334155;
+  margin-top: 20px;
+}
+
+h4 span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+#social-space {
+  margin-top: 50px;
+}
+
+/*MEDIA QUERIES---*/
+@media (max-width: 700px) {
+  ul,
+  li {
+    display: none;
+  }
+  header {
+    padding: 20px 35px;
+  }
+  header nav div:first-of-type input {
+    display: none;
+  }
+  header nav div:first-of-type .bx-search-alt-2 {
+    display: none;
+  }
+
+  #toggle_menu {
+    cursor: pointer;
+  }
+
+  #toggle_menu i {
+    font-size: 40px;
+  }
+  section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 40px 35px;
+    width: 100%;
+  }
+}
+@media (min-width: 701px) and (max-width: 1024px) {
+  ul,
+  li {
+    display: none;
+  }
+  header {
+    padding: 20px 4rem;
+  }
+  header nav div:first-of-type input {
+    display: none;
+  }
+
+  header nav div:last-of-type .bx-search-alt-2 {
+    display: none;
+  }
+
+  #toggle_menu {
+    cursor: pointer;
+    display: block;
+  }
+
+  #toggle menu i {
+    font-size: 40px;
+  }
+  section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 40px 35px;
+    width: 100%;
+  }
+  @media (min-width: 1990px) {
+    body {
+      width: 60%;
+      margin: auto;
+    }
+  }
+}
