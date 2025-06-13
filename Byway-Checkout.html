@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Byway - Checkout</title>
+  </head>
+  <body
+    class="xtraLargeScreens: max-w-[1990px] xtraLargeScreens: mx-auto relative h-screen flex flex-col overflow-x-hidden"
+  >
+    <!--NAVIGATION SECTION-->
+    <header>
+      <nav
+        class="px-[35px] lg:px-[28px] next_hub:px-10 flex item-center justify-center my-[25px]text-gray-500 relative gap-4 border outline-b-gray-600 py-[10px]"
+      >
+        <img src="logo.png" alt="byway_logo" class="my-[5px]" />
+        <li class="list-none hidden lg:flex my-[5px]">
+          <a href="#">Byway</a>
+        </li>
+        <li class="list-none hidden lg:flex my-[5px]">
+          <a href="#">Categories</a>
+        </li>
+        <div
+          class="border outline-gray-600 hidden lg:flex item-center justify-start w-[622px] h-[40px] rounded-md my-[5px]"
+        >
+          <input
+            type="text"
+            placeholder="Search courses"
+            class="px-[10px] text-gray-400"
+          />
+        </div>
+        <li class="list-none mx-[2px] my-[5px]">
+          <a href="#">Teach on Byway</a>
+        </li>
+        <div class="px-[30px]">
+          <i class="bx bx-heart mx-[5px] my-[5px]"><a href="#"></a></i>
+          <i class="bx bx-cart mx-[5px] my-[5px]"><a href="#"></a></i>
+          <i class="bx bx-bell mx-[5px] my-[5px]"><a href="#"></a></i>
+          <button
+            class="rounded-[50%] border border-gray-300 bg-gray-800 text-white w-[30px] mx-[5px] my-[5px]"
+          >
+            J
+          </button>
+        </div>
+      </nav>
+    </header>
+    <section class="mx-[50px] my-[30px]">
+      <div class="px-[50px] py-[10px] flex gap-5">
+        <h1 class="text-xl font-bold text-gray-900">Checkout Page</h1>
+        <p class="px-[2px]">Details</p>
+        <p class="py-[2px]">Shopping Cart</p>
+        <p class="text-blue-600 py-[2px]">Checkout</p>
+      </div>
+
+      <!---SECOND SECTION-->
+      <form class="flex">
+        <div id="side_A">
+          <div class="mx-[50px] flex gap-4">
+            <div>
+              <label for="" class="font-bold">Country</label><br />
+              <input
+                type="text"
+                class="w-[370px] h-[50px] border border-gray-300 rounded-md px-[5px]"
+                placeholder="Search Country"
+              />
+            </div>
+            <div>
+              <label for="" class="font-bold">State/Union Territory</label
+              ><br />
+              <input
+                type="text"
+                class="w-[370px] h-[50px] border border-gray-300 rounded-md px-[5px]"
+                placeholder="Enter State"
+              />
+            </div>
+          </div>
+          <!--SECOND SECTION FORM-->
+          <div class="mx-[48px] my-[20px]">
+            <p class="font-bold">Payment Method</p>
+          </div>
+          <div>
+            <div class="mx-[48px] flex justify-between w-[90%]">
+              <span class="my-[5px]">
+                <input type="radio" class="px-[5px]" /><label
+                  for=""
+                  class="px-[10px] font-bold"
+                  >Credit/Debit Card</label
+                >
+              </span>
+              <img src="visa.png" alt="Payment image" class="h-[40px]" />
+            </div>
+            <div class="mx-[48px]">
+              <label for="" class="text-gray-900">Name On Card</label><br />
+              <input
+                type="text"
+                class="w-full h-[45px] border border-gray-400 rounded-md px-[10px] py-[5px] my-[5px]"
+                placeholder="Name On Card"
+              />
+            </div>
+            <div class="mx-[48px]">
+              <label for="" class="text-gray-900">Card Number</label><br />
+              <input
+                type="text"
+                class="w-full h-[45px] border border-gray-400 rounded-md px-[10px] py-[5px] my-[5px]"
+                placeholder="Card Number"
+              />
+            </div>
+            <div class="flex gap-4 mx-[48px]">
+              <div>
+                <label for="" class="text-gray-900">Expiry Date</label><br />
+                <input
+                  type="text"
+                  class="w-[370px] h-[50px] border border-gray-300 rounded-md px-[5px]"
+                  placeholder="Expiry Date"
+                />
+              </div>
+              <div>
+                <label>CVC/CVV</label><br />
+                <input
+                  type="text"
+                  class="w-[370px] h-[50px] border border-gray-300 rounded-md px-[5px]"
+                  placeholder="CVC/CVV"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="mx-[48px] flex justify-between w-[88%] my-[20px]">
+            <span class="my-[5px]">
+              <input type="radio" class="px-[5px]" /><label
+                for=""
+                class="px-[10px] font-bold"
+                >Paypal</label
+              >
+            </span>
+            <img src="paypal.png" alt="Payment image" class="h-[30px]" />
+          </div>
+        </div>
+
+        <div id="side_B" class="mx-[10px]">
+          <h1 class="font-bold">Order Details</h1>
+          <div
+            class="px-[4px] py-[4px] border border-gray-300 bg-blue-50 flex rounded-md"
+          >
+            <img
+              src="CHECKOUT.png"
+              alt="course Image"
+              class="px-[2px] py-[2px] w-[125px] h-[125px] rounded-md"
+            />
+            <div>
+              <h1 class="text-xs text-blue-600">Design</h1>
+              <p class="text-gray-900 font-semibold">
+                Introduction to User experience Design
+              </p>
+              <span class="flex gap-2"
+                ><p class="text-xs text-gray-500">155 Lectures</p>
+                <p class="text-xs text-gray-500">22 Total Hours</p></span
+              >
+              <p class="text-gray-900 font-semibold">$45</p>
+            </div>
+          </div>
+          <!---Section 2-->
+          <div
+            class="my-[20px] border border-gray-300 bg-blue-50 rounded-md text-xs text-gray-500 px-[5px] py-[10px] h-[40px]"
+          >
+            <p>APPLY DISCOUNT CODE</p>
+          </div>
+
+          <div class="border border-gray-300 bg-blue-50 rounded-md">
+            <div class="flex justify-between px-[5px] py-[5px]">
+              <p>Price</p>
+              <p>$300.00</p>
+            </div>
+            <div class="flex justify-between px-[5px] py-[5px]">
+              <p>Discount</p>
+              <p>-$10.00</p>
+            </div>
+            <div
+              class="flex justify-between border border-b-gray-300 px-[5px] py-[5px]"
+            >
+              <p>Tax</p>
+              <p>$20.00</p>
+            </div>
+            <div class="flex justify-between px-[5px] py-[5px]">
+              <p>Total</p>
+              <p>$290.00</p>
+            </div>
+          </div>
+
+          <!---BUTTON-->
+          <div>
+            <button
+              class="bg-gray-900 text-white px-[10px] py-[10px] text-xs w-full rounded-md my-[20px]"
+            >
+              Proceed to Checkout
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
